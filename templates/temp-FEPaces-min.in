@@ -1,0 +1,33 @@
+production
+ &cntrl
+   imin=1, ntmin=2,
+   ntx=1, irest=0,
+   ntxo=2, ntpr=1000, ntwr=10000000, ntwx=1000, ioutfm=1,
+   nstlim=2000, dt=DT,
+   ntc=NTC, nsnb=10,
+   ntf=1, ntb=1, cut=10.,
+   clambda=CLAMBDA,
+   icfe=1, ifsc=1,
+   timask1='TIMASK1',
+   timask2='TIMASK2',
+   scmask1='SCMASK1',
+   scmask2='SCMASK2',
+   gti_cut          = 1,
+   gti_output       = 1,
+   scalpha          = 0.5,
+   scbeta           = 1.0,
+   gti_add_sc       = 5,
+   gti_scale_beta   = 1,
+   gti_cut_sc_on    = 8,
+   gti_cut_sc_off   = 10,
+   gti_ele_sc       = 1,
+   gti_vdw_sc       = 1,
+   gti_cut_sc       = 2,
+   gti_ele_exp      = 2,
+   gti_vdw_exp      = 2,
+   gti_bat_sc=GTI_BAT_SC,
+   gti_lam_sch=1, 
+/
+ &ewald
+   ew_type=0, use_pme=1,
+/

@@ -1,0 +1,16 @@
+source leaprc.lipid21
+source leaprc.protein.ff14SB
+source leaprc.water.tip3p
+source leaprc.gaff2
+OLDMOL = loadmol2 ../../../01-mol_param/OLDMOL/OLDMOL.mol2
+loadamberparams ../../../01-mol_param/OLDMOL/OLDMOL.frcmod
+MOL_NAME = loadmol2 ../../../01-mol_param/MOL_NAME/MOL_NAME.mol2
+loadamberparams ../../../01-mol_param/MOL_NAME/MOL_NAME.frcmod
+SYS = loadpdb START_FRAME
+set SYS box { XXX  YYY  ZZZ }
+bond SYS.282.SG SYS.287.SG
+bond SYS.296.SG SYS.301.SG
+charge SYS
+saveAmberParm SYS hNKCC1_MOL_NAME.top hNKCC1_MOL_NAME.rst
+quit
+
