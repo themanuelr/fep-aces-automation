@@ -17,6 +17,4 @@ Repository Structure:
 
     templates/: Bash and input templates used for automated job submission.
 
-    Example_Setup.ipynb: Demonstration of the end-to-end setup workflow.
-
 Note: This is research code developed for a specific project. It is shared here to demonstrate the methodology and automation logic used in my published work.
