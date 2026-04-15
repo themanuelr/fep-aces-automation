@@ -1,7 +1,5 @@
 import argparse
 
-HAND_EDIT_TOR_N=True
-
 parser=argparse.ArgumentParser()
 parser.add_argument('compound',type=str)
 args=parser.parse_args()
@@ -39,9 +37,6 @@ for line in lines:
         inside_atom_section = False
         new_lines.append(line)
     elif inside_atom_section and line.strip():
-        if HAND_EDIT_TOR_N:
-            if 'ne' in line:
-                line=line.replace('ne','n2')
         parts = line.split()
         if len(parts) >= 9:  # Ensure it is a valid atom line
             if float(q_opt_values[q_opt_index])<0:

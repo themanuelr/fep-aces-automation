@@ -14,7 +14,7 @@ Z=18
 #from rdkit.Chem.Draw import IPythonConsole
 #from rdkit.Chem.Draw import rdMolDraw2D
 #from cairosvg import svg2png
-#rdkit part of the script is not fully implemented, because of how AmberTools environment is set up
+#rdkit part of the script is not fully implemented
 
 #overall figure saving is broken - needs directory setup and figure routing
 
