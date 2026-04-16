@@ -1,15 +1,5 @@
 ## Full Workflow: Step by Step
 
-### Cell 1 — Import
-
-```python
-import fepfilesetup as ffs
-```
-
-Imports the entire automation library as `ffs`.
-
-***
-
 ### Step 1 — `ffs.campaign_dir_setup(campaign_name)`
 
 **Function logic** : Creates the entire campaign directory tree:
